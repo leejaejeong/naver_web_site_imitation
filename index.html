@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/font.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
+
 <body>
     <!-- ! header -->
     <header>
@@ -183,35 +185,41 @@
     <div class="wrap">
         <div class="left_wrap">
             <div class="banner samsung_banner">
-                <img src="imgs/naver_banner01_samsung.jpg" alt="[광고]삼성화재 다이렉트 착, 만기일 상관없이 자동차보험료 확인하면 스타벅스 아메리카노 2잔을 드립니다!">
+                <img src="imgs/naver_banner01_samsung.jpg"
+                    alt="[광고]삼성화재 다이렉트 착, 만기일 상관없이 자동차보험료 확인하면 스타벅스 아메리카노 2잔을 드립니다!">
             </div>
-
             <section class="sec news_sec">
-                <ul class="news_tab_list">
+                <ul class="tab_list news_tab_list">
                     <li>
-                        뉴스스탠드
+                        <span>뉴스스탠드</span>
                         <div class="blind">
                             <span>예전 PC와 동일한 방식으로 보기</span>
                         </div>
                     </li>
                     <li>
-                        언론사편집
+                        <span>언론사편집</span>
                         <div class="blind">
                             <span>모바일과 동일한 방식으로 보기</span>
                         </div>
                     </li>
-                    <li>엔터</li>
                     <li>
-                        스포츠
-                        <div class="live">
+                        <span>엔터</span>
+                    </li>
+                    <li class="sports">
+                        <span>스포츠</span>
+                        <div class="live_ico">
                             <div class="img_box">
                                 <img src="imgs/naver_news_live_ico.png" alt="라이브">
                             </div>
                             <span>LIVE</span>
                         </div>
                     </li>
-                    <li>경제</li>
-                    <li>쇼핑투데이</li>
+                    <li>
+                        <span>경제</span>
+                    </li>
+                    <li>
+                        <span>쇼핑투데이</span>
+                    </li>
                 </ul>
                 <div class="news_stand">
                     <div class="news_slide">
@@ -228,20 +236,7 @@
                         </div>
                         <div class="box box02">
                             <h5>연합뉴스</h5>
-                            <ul>
-                                <li>
-                                    <a href="#">"AI로 일자리 341만개 대체…고소득·고학력일수록 가능성↑"</a>
-                                </li>
-                                <li>
-                                    <a href="#">변우석 측, '과잉 경호' 논란에 사과…"도의적 책임감 통감"</a>
-                                </li>
-                                <li>
-                                    <a href="#">[트럼프 피격] "현지 경찰관, 총격 직전 용의자 맞닥뜨려"</a>
-                                </li>
-                                <li>
-                                    <a href="#">폭우 피해로 상추·깻잎값 상승…농식품부 "공급 안정에 총력"</a>
-                                </li>
-                            </ul>
+                            <a href="#">"AI로 일자리 341만개 대체…고소득·고학력일수록 가능성↑"</a>
                         </div>
                         <div class="box box03">
                             <a href="#">뉴스스탠드</a>
@@ -458,6 +453,15 @@
                                 <a href="#">기사보기</a>
                             </div>
                         </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="imgs/naver_news_stand_img24.png" alt="EBS">
+                            </div>
+                            <div class="txt_box">
+                                <a href="#">구독</a>
+                                <a href="#">기사보기</a>
+                            </div>
+                        </li>
                     </ul>
                     <div class="pagination">
                         <div class="blank_box"></div>
@@ -471,16 +475,13 @@
                                 <span>/4</span>
                             </p>
                             <div class="img_box">
-                                <img src="imgs/naver_news_arrow_ico.png" alt="이전">
+                                <img src="imgs/naver_news_arrow_ico.png" alt="다음">
                             </div>
                         </div>
                         <div class="layout_select">
                             <ul>
                                 <li class="list_type">
                                     <div class="img_box">
-                                        <img src="imgs/naver_news_layout01_blue.png" alt="리스트형">
-                                    </div>
-                                    <div class="img_box hover_img_box">
                                         <img src="imgs/naver_news_layout01_gray.png" alt="리스트형">
                                     </div>
                                 </li>
@@ -488,19 +489,265 @@
                                     <div class="img_box">
                                         <img src="imgs/naver_news_layout02_blue.png" alt="썸네일형">
                                     </div>
-                                    <div class="img_box hover_img_box">
-                                        <img src="imgs/naver_news_layout02_gray.png" alt="썸네일형">
-                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="sec shopping_sec">
+                <div class="tab_list_box">
+                    <ul class="tab_list shopping_tab_list">
+                        <li>
+                            <span>쇼핑</span>
+                        </li>
+                        <li>
+                            <span>맨즈</span>
+                        </li>
+                        <li>
+                            <span>원쁠딜</span>
+                        </li>
+                        <li>
+                            <span>쇼핑라이브</span>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <span>
+                            <strong>1</strong>
+                            /12
+                        </span>
+                        <div class="pagination_box">
+                            <div class="img_box">
+                                <img src="imgs/naver_news_arrow_ico.png" alt="이전">
+                            </div>
+                            <div class="img_box">
+                                <img src="imgs/naver_news_arrow_ico.png" alt="다음">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping_contents">
+                    <div class="contents_container">
+                        <div class="box shop_list_box">
+                            <div class="shop_list">
+                                <div>
+                                    <a href="#">
+                                        <strong>쿠팡</strong>
+                                    </a>
+                                    <a href="#">G마켓</a>
+                                    <a href="#">옥션</a>
+                                    <a href="#">SSG닷컴</a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <strong>11번가</strong>
+                                    </a>
+                                    <a href="#">올리브영</a>
+                                    <a href="#">위메프</a>
+                                    <a href="#">하프클럽</a>
+                                </div>
+                                <div>
+                                    <a href="#">GS SHOP</a>
+                                    <a href="#">
+                                        <strong>CJ온스타일</strong>
+                                    </a>
+                                    <a href="#">패션플러스</a>
+                                </div>
+                            </div>
+                            <ul class="shopping_quick_link">
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_home_ico.png" alt="쇼핑홈">
+                                    </div>
+                                    <span>쇼핑홈</span>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_review_ico.png" alt="리뷰적립">
+                                    </div>
+                                    <span>리뷰적립</span>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_delivery_ico.png" alt="주문">
+                                    </div>
+                                    <span>주문</span>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_cart_ico.png" alt="장바구니">
+                                    </div>
+                                    <span>장바구니</span>
+                                </li>
+                            </ul>
+                            <div class="shopping_banner">
+                                <div class="img_box">
+                                    <img src="imgs/naver_shopping_banner_img.jpg" alt="[지금 55% 세일 중] 일자어깨 비결 이것만 있으면 돼">
+                                </div>
+                                <p>사람 손만큼 시원한 목 마사지기</p>
+                            </div>
+                        </div>
+                        <div class="box shopping_item_box">
+                            <ul>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item01.jpg" alt="계속 눕고싶어져 시원하기까지~">
+                                    </div>
+                                    <p>계속 눕고싶어져<br>
+                                        시원하기까지~</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item02.jpg" alt="목의결림이 싹~! 깊은잠베개 50%">
+                                    </div>
+                                    <p>목의결림이 싹~!<br>
+                                        깊은잠베개 50%</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item03.jpg" alt="시즌오프 EVENT 7월 전품목SALE!">
+                                    </div>
+                                    <p>시즌오프 EVENT<br>
+                                        7월 전품목SALE!</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item04.jpg" alt="클리어런스 세일 최대 70%SALE">
+                                    </div>
+                                    <p>클리어런스 세일 <br>
+                                        최대 70%SALE</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item05.jpg" alt="1만원대 유니크 인기 3피스 세트">
+                                    </div>
+                                    <p>1만원대 유니크 <br>
+                                        인기 3피스 세트</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item06.jpg" alt="반값 할인특가 14K 18K 팔찌">
+                                    </div>
+                                    <p>반값 할인특가 <br>
+                                        14K 18K 팔찌</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item07.jpg" alt="썸머 BIG SALE 프리미엄 반바지">
+                                    </div>
+                                    <p>썸머 BIG SALE <br>
+                                        프리미엄 반바지</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item08.jpg" alt="Dr.line헤모키즈 고객 감사 특가">
+                                    </div>
+                                    <p>Dr.line헤모키즈 <br>
+                                        고객 감사 특가</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item09.jpg" alt="역대급반응폭발 SALE 최대70%↓">
+                                    </div>
+                                    <p>역대급반응폭발 <br>
+                                        SALE 최대70%↓</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="imgs/naver_shopping_item10.jpg" alt="BEST신상~인기! 지금2만원대Sale">
+                                    </div>
+                                    <p>BEST신상~인기! <br>
+                                        지금2만원대Sale</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="todays_benefits">
+                        <div class="box box01">
+                            <h5>오늘의 혜택</h5>
+                        </div>
+                        <div class="box box02">
+                            <div class="img_box">
+                                <img src="imgs/naver_shopping_oliveyoung_logo.png" alt="올리브영">
+                            </div>
+                            <a href="#">올리브영 BEST 여름 필수템 최대 40% 특가, 1+1 기획까지</a>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="blank_box"></div>
+                        <div class="pagination_box">
+                            <div class="img_box">
+                                <img src="imgs/naver_news_arrow_ico.png" alt="이전">
+                            </div>
+                            <p>
+                                <strong>쇼핑아이템</strong>
+                                더보기 1
+                                <span>/13</span>
+                            </p>
+                            <div class="img_box">
+                                <img src="imgs/naver_news_arrow_ico.png" alt="다음">
+                            </div>
+                        </div>
+                        <div class="ad_box">
+                            <span>AD</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec subscribe_sec">
+                <ul class="tab_list subscribe_tab_list">
+                    <li>
+                        <span>추천・구독</span>
+                    </li>
+                    <li>
+                        <span>자동차</span>
+                    </li>
+                    <li>
+                        <span>웹툰</span>
+                    </li>
+                    <li>
+                        <span>패션뷰티</span>
+                    </li>
+                    <li>
+                        <span>레시피</span>
+                    </li>
+                    <li>
+                        <span>리빙</span>
+                    </li>
+                    <li>
+                        <span>책방</span>
+                    </li>
+                    <li>
+                        <span>지식+</span>
+                    </li>
+                    <li>
+                        <span>건강</span>
+                    </li>
+                    <li>
+                        <span>게임</span>
+                    </li>
+                </ul>
+                <div class="sub_tab_list">
+                    <div class="box box01">
+                        <ul>
+                            <li>인기</li>
+                            <li>동물</li>
+                            <li>여행</li>
+                            <li>연애결혼</li>
+                            <li>영화</li>
+                            <li>육아</li>
+                        </ul>
+                    </div>
+                    <div class="box box02">
+                        <a href="#">구독홈</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-    
+
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
