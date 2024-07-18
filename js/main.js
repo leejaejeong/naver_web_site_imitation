@@ -10,5 +10,10 @@ $(function(){
             $(this).addClass('active');
             // $('.news_sec > div').eq($(this).index()).fadeIn(300).siblings('.news_sec > div').hide();
         }).filter(':eq(0)').click();
+
+        $('.subscribe_sec .sub_tab_list li').click(function(){
+            $('.subscribe_sec .sub_tab_list li').removeClass('active');
+            $(this).addClass('active');
+        }).filter(':eq(0)').click();
     })
 })

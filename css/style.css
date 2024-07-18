@@ -268,14 +268,19 @@ header nav span::before {
 
 /* ! ===== contents ===== */
 .wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
     width: 1280px;
     margin: 0 auto;
 }
 
-
-/* ! ===== contents (left) ===== */
 .left_wrap{
     width: 830px;
+}
+
+.right_wrap{
+    width: 420px;
 }
 
 /* ! ===== contents (left) > banner ===== */
@@ -284,7 +289,6 @@ header nav span::before {
 }
 .samsung_banner img{
     width: 830px;
-    height: 130px;
     object-fit: cover;
     border: 1px solid #E3E5E8;
     border-radius: 10px;
@@ -695,6 +699,7 @@ header nav span::before {
 
 /* ! ===== contents (left) > shopping ===== */
 .shopping_sec{
+    margin: 0 0 12px 0;
     border: 1px solid #E3E5E8;
     border-radius: 10px;
 }
@@ -1067,4 +1072,507 @@ header nav span::before {
     border: 1px solid #E3E5E8;
     border-radius: 4px;
     color: #222;
+}
+
+
+
+/* ! ===== contents (left) > subscribe ===== */
+.subscribe_sec{
+    border: 1px solid #E3E5E8;
+    border-radius: 10px;
+}
+
+.subscribe_sec .subscribe_tab_list{
+    padding: 18px;
+}
+
+.subscribe_sec .subscribe_tab_list li:nth-child(1n + 2)::before{
+    content: '/';
+    padding: 0 5px 0 0;
+    font-size: 20px;
+    font-family: 'Malgun Gothic semilight';
+    color: #E3E5E8;
+}
+
+.subscribe_sec .sub_tab_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0 18px 18px 18px;
+    border-radius: 4px;
+    background-color: #f5f7f8;
+}
+
+.subscribe_sec .sub_tab_list ul{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.subscribe_sec .sub_tab_list ul li{
+    padding: 10px 12px;
+    font-size: 14.7px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #ebebeb;
+    color: #404040;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.subscribe_sec .sub_tab_list ul li.active{
+    font-family: 'Malgun Gothic bold';
+    color: #fff;
+    background-color: #5290ff;
+}
+
+.subscribe_sec .sub_tab_list .box02 a{
+    padding: 0 10px;
+    font-size: 15px;
+    font-family: 'Malgun Gothic bold';
+}
+
+.subscribe_contents{
+    margin: 18px;
+}
+
+.subscribe_contents .popularity_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 18px 15px;
+}
+
+.subscribe_contents .popularity_list li{
+    cursor: pointer;
+}
+
+.subscribe_contents .popularity_list li > .img_box{
+    width: 182.5px;
+    height: 120px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 4px;
+}
+
+.subscribe_contents .popularity_list li > .img_box img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.subscribe_contents .popularity_list li > .img_box:hover img{
+    transform: scale(1.05);
+}
+
+.subscribe_contents .popularity_list li .txt_box{
+    width: 182.5px;
+}
+
+.subscribe_contents .popularity_list li p{
+    display: -webkit-box;   
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 182.5px;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14.7px;
+    line-height: 1.3;
+}
+
+.subscribe_contents .popularity_list li:hover p{
+    text-decoration: underline;
+}
+
+.subscribe_contents .popularity_list li .profile_box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.subscribe_contents .popularity_list li .profile_box .img_box img{
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 50%;
+}
+
+.subscribe_contents .popularity_list li .profile_box span{
+    display: block;
+    width: 108.33px;
+    height: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13.65px;
+    color: #606060;
+}
+
+.short_pleasure{
+    margin: 18px 0;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.short_pleasure > div{
+    position: relative;
+}
+
+.short_pleasure h4{
+    padding: 23px 0 15px 0;
+    font-size: 15px;
+    font-family: 'Malgun Gothic bold';
+}
+
+.short_pleasure_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.short_pleasure_list li{
+    cursor: pointer;
+}
+
+.short_pleasure_list .img_box{
+    width: 109px;
+    height: 156px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 4px;
+}
+
+.short_pleasure_list .img_box img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.short_pleasure_list .img_box:hover img{
+    transform: scale(1.05);
+}
+
+.short_pleasure_list .txt_box p{
+    display: -webkit-box;   
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 108.33px;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14.7px;
+    line-height: 1.3;
+}
+
+.short_pleasure_list li:hover .txt_box p{
+    text-decoration: underline;
+}
+
+.short_pleasure_list .txt_box span{
+    display: block;
+    width: 108.33px;
+    height: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13.65px;
+    color: #606060;
+}
+
+.short_pleasure .pagination_box{
+    position: absolute;
+    top: 82px; 
+    right: -32px;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #E3E5E8;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.short_pleasure .pagination_box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+}
+
+.subscribe_sec .expand{
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.subscribe_sec .expand p{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Malgun Gothic bold';
+    color: #606060;
+    cursor: pointer;
+}
+
+.subscribe_sec .expand p strong{
+    font-size: 20px;
+    font-family: 'Malgun Gothic bold';
+    color: #5290ff;
+}
+
+
+/* ! ===== contents (right) > login ===== */
+.login_sec{
+    margin: 0 0 12px 0;
+    padding: 18px;
+    border: 1px solid #E3E5E8;
+    border-radius: 10px;
+}
+
+.login_sec > p{
+    margin: 0 0 17px 0;
+    text-align: center;
+    font-size: 14.7px;
+}
+
+.login_sec .login_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 17px 0;
+    padding: 17px;
+    border-radius: 4px;
+    background-color: #03C75A;
+    cursor: pointer;
+}
+
+.login_sec .login_btn:hover{
+    background-color: #01be56;
+}
+
+.login_sec .login_btn img{
+    width: 72px;
+    vertical-align: middle;
+}
+
+.login_sec .login_btn span{
+    font-size: 14.7px;
+    color: #fff;
+}
+
+.login_sec .login_more{
+    text-align: center;
+}
+
+.login_sec .login_more span{
+    font-size: 13.5px;
+}
+
+.login_sec .login_more span:not(:first-child):before{
+    content: '|';
+    padding: 0 8px 0 5px;
+    font-size: 12px;
+    font-family: 'Malgun Gothic semilight';
+    color: #d3d5d7;
+}
+
+
+/* ! ===== contents (right) > goodneighbors banner ===== */
+.goodneighbors_banner{
+    margin: 0 0 12px 0;
+    cursor: pointer;
+}
+
+.goodneighbors_banner img{
+    width: 420px;
+    object-fit: cover;
+    border: 1px solid #E3E5E8;
+    border-radius: 10px;
+}
+
+
+/* ! ===== contents (right) > weather ===== */
+.weather_sec{
+    margin: 0 0 12px 0;
+    padding: 12px 18px 24px 12px;
+    border: 1px solid #E3E5E8;
+    border-radius: 10px;
+}
+
+.weather_sec .sec_tit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 12px 0;
+}
+
+.weather_sec .sec_tit .tit_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather_sec .sec_tit .tit_box h4{
+    font-size: 15.75px;
+    font-family: 'Malgun Gothic bold';
+    cursor: pointer;
+}
+
+.weather_sec .sec_tit .tit_box h4:hover{
+    text-decoration: underline;
+}
+
+.weather_sec .sec_tit .tit_box > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 9px 6px 12px;
+    border: 1px solid #ebebeb;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.weather_sec .sec_tit .tit_box > div:hover{
+    background-color: #fafafa;
+}
+
+.weather_sec .sec_tit .tit_box > div > div{
+    position: relative;
+}
+
+.weather_sec .sec_tit .tit_box > div > div .img_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.weather_sec .sec_tit .tit_box > div > div .img_box:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.weather_sec .sec_tit .tit_box > div:hover > div .img_box:nth-child(2){
+    opacity: 1;
+    visibility: visible;
+}
+
+.weather_sec .sec_tit .tit_box > div:hover > div .img_box:nth-child(1){
+    opacity: 0;
+    visibility: hidden;
+}
+
+.weather_sec .sec_tit .tit_box > div img{
+    width: 14px;
+}
+
+.weather_sec .sec_tit .tit_box > div span{
+    font-size: 11.5px;
+    color: #606060;
+}
+
+.weather_sec .sec_tit .location span{
+    font-size: 13.6px;
+}
+
+.weather_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #E3E5E8;
+}
+
+.weather_contents .box01{
+    flex: 1;
+}
+
+.weather_contents .box01 > div{
+    cursor: pointer;
+}
+
+.weather_contents .box01 > div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 18px 0;
+}
+
+.weather_contents .box01 > div img{
+    width: 85px;
+}
+
+.weather_contents .box01 .txt_box h3{
+    font-size: 40.95px;
+}
+
+.weather_contents .box01 .txt_box p{
+    font-family: 'Malgun Gothic bold';
+}
+
+.weather_contents .box01 > div:last-child p{
+    text-align: center;
+    font-size: 14.7px;
+    line-height: 1.5;
+    color: #E3E5E8;
+}
+
+.weather_contents .box01 > div:last-child p > strong:first-child{
+    color: #3172e7;
+}
+
+.weather_contents .box01 > div:last-child p > strong:last-child{
+    color: #cd3534;
+}
+
+.weather_contents .box01 > div:last-child p > span{
+    font-size: 13.6px;
+}
+
+.weather_contents .box01 > div:last-child p > span > strong{
+    color: #32a1ff;
+}
+
+
+.weather_contents .box02{
+    flex: 1;
+    cursor: pointer;
+}
+
+.weather_contents .box02 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.weather_contents .box02 ul li > div p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.weather_contents .box02 ul li > div p:nth-child(1){
+    padding: 0 0 24px 0;
+}
+
+.weather_contents .box02 ul li > div p strong{
+    font-family: 'Malgun Gothic bold';
+}
+
+.weather_contents .box02 ul li .line{
+    width: 1px;
+    height: 50px;
+    background-color: #E3E5E8;
+    margin: 0 auto 10px auto;
+}
+
+.weather_contents .box02 ul li .img_box{
+    margin: 0 0 8px 0;
+}
+
+.weather_contents .box02 ul li .img_box img{
+    width: 28px;
 }
