@@ -66,11 +66,11 @@
                 <div class="special_img">
                     <img src="imgs/naver_logo_img.gif" alt="초복 작가소개">
                 </div>
-                <div class="serch_area">
+                <div class="search_area">
                     <div class="input_box">
-                        <input type="text">
+                        <input type="text" placeholder="검색어를 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력해 주세요.'">
                     </div>
-                    <div class="serch_tools">
+                    <div class="search_tools">
                         <div class="input_tool">
                             <div class="img_box">
                                 <img src="imgs/naver_input_tool_ico01.png" alt="입력도구">
@@ -180,6 +180,36 @@
             </div>
         </div>
     </header>
+
+    <!-- ! search bar -->
+    <div class="search_bar">
+        <div class="search_area">
+            <div>
+                <a href="#">
+                    <img src="imgs/naver_search_bar_mark.png" alt="네이버">
+                </a>
+                <div class="input_box">
+                    <input type="text" placeholder="검색어를 입력해 주세요.">
+                </div>
+                <div class="search_tools">
+                    <div class="input_tool">
+                        <div class="img_box">
+                            <img src="imgs/naver_input_tool_ico01.png" alt="입력도구">
+                        </div>
+                        <div class="blind">
+                            <span>입력도구</span>
+                        </div>
+                    </div>
+                    <div class="img_box autocomplete_arr">
+                        <img src="imgs/naver_arrow_ico.png" alt="자동완성/최근검색어펼치기">
+                    </div>
+                    <div class="img_box search_ico">
+                        <img src="imgs/naver_search_bar_ico.png" alt="검색">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ! contents -->
     <div class="wrap">
@@ -1529,7 +1559,7 @@
 
     <!-- ! sticky btn -->
     <div class="sticky_btn">
-        <button>
+        <button class="scroll_top_btn">
             <img src="imgs/naver_sticky_btn_scroll_top_ico.png" alt="맨 위로">
          </button>
          <button>
