@@ -15,5 +15,13 @@ $(function(){
             $('.subscribe_sec .sub_tab_list li').removeClass('active');
             $(this).addClass('active');
         }).filter(':eq(0)').click();
+
+        $('.stock_market_info > .img_box').click(function(){
+            $('.stock_market_info > .blind').toggleClass('show');
+        })
+
+        $('.stock_market_info > .blind img').click(function(){
+            $('.stock_market_info > .blind').removeClass('show');
+        })
     })
 })
